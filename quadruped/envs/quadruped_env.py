@@ -55,7 +55,7 @@ class QuadrupedEnv(gym.Env):
         error_x = (h1x-h1[0])**2+(h2x-h2[0])**2+(h3x-h3[0])**2+(h4x-h4[0])**2
         error_z = (h1z-h1[2])**2+(h2z-h2[2])**2+(h3z-h3[2])**2+(h4z-h4[2])**2
         # rpos = (posz-cgz)**2
-        rvel = velx if velx !=0 else -10*n_step   #to avoid getting stuck
+        rvel = velx if velx !=0 else -50*n_step   #to avoid getting stuck
         rstep = n_step   # length of time
         # rheight = 0 if posz >= 0.15 else -5
         reward = 10*rstep + 10*rvel - r_ori -1000*area**2 - 100*error_x - 20*error_z
