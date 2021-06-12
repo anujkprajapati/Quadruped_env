@@ -117,7 +117,7 @@
         <child link="flange1"/> 
         <axis xyz="1 0 0"/>
         <origin xyz="0.05 0 0"/>
-        <limit lower="-0.5" upper="0.5" effort="10" velocity="10"/>
+        <limit lower="-0.2" upper="0.5" effort="10" velocity="10"/>
     </joint>
     
     <!--2.front_right-->
@@ -145,7 +145,7 @@
         <child link="flange2"/> 
         <axis xyz="-1 0 0"/>
         <origin xyz="0.05 0 0"/>
-        <limit lower="-0.5" upper="0.5" effort="10" velocity="10"/>
+        <limit lower="-0.2" upper="0.5" effort="10" velocity="10"/>
     </joint>
     
     <!--3.back_left-->
@@ -173,7 +173,7 @@
         <child link="flange3"/> 
         <axis xyz="1 0 0"/>
         <origin xyz="-0.05 0 0"/>
-        <limit lower="-0.5" upper="0.5" effort="10" velocity="10"/>
+        <limit lower="-0.2" upper="0.5" effort="10" velocity="10"/>
     </joint>
     
     <!--4.back_right-->
@@ -201,7 +201,7 @@
         <child link="flange4"/> 
         <axis xyz="-1 0 0"/>
         <origin xyz="-0.05 0 0"/>
-        <limit lower="-0.5" upper="0.5" effort="10" velocity="10"/>
+        <limit lower="-0.2" upper="0.5" effort="10" velocity="10"/>
     </joint>
     
     <!-- Thighs-->

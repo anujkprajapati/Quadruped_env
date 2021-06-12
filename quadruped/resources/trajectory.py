@@ -7,12 +7,12 @@ class Path:
         pass
     
 
-    def get_location(odd,n_step,count):
+    def get_location(odd,n_step,count,posx):
         
         stride = 0.05
         height = 0.03
-        basex = n_step/count * stride
-        # basex = posx + stride
+        # basex = n_step/count * stride
+        basex = posx + stride
         theta = n_step%count * np.pi
         if odd ==0:
             # zdirection
@@ -39,7 +39,7 @@ class Path:
             h3x = basex - 0.102 - stride/2 * np.cos(theta)
             h1x = basex + 0.102
             h4x = basex - 0.102
-        print(f'the count is{count}')
+        # print(f'the count is{count}')
         return h1x, h2x, h3x, h4x, h1z, h2z, h3z, h4z
 
 
